@@ -231,7 +231,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onLanguageChange, o
           >
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500 group-hover:scale-110" />
-              <<div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-white shadow-xl border border-cyan-400/30">
+              <div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-white shadow-xl border border-cyan-400/30">
   <img
     src="/logo/logo.png"
     alt="Pasific Lombok Tour & Travel"
