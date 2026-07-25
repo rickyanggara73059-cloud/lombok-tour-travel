@@ -1,0 +1,6 @@
+{
+  "name": "Lombok Tour & Travel",
+  "description": "Website Tour & Travel Lombok Nusa Tenggara Barat - Paket Wisata Gili, Rinjani Trekking, Mandalika, Air Terjun, Sewa Mobil & Pemesanan WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
