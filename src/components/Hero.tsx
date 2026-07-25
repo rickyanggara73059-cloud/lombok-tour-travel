@@ -372,7 +372,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onSearch, onOpenBooking
             </div>
             <div className="relative aspect-video w-full bg-black">
               <iframe
-                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://www.youtube.com/watch?v=zvYMC4i45F8"
                 title="Lombok Travel Destination"
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
