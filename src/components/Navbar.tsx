@@ -231,18 +231,24 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onLanguageChange, o
           >
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500 group-hover:scale-110" />
-              <div className="relative w-11 h-11 rounded-2xl bg-slate-900 border border-cyan-400/40 flex items-center justify-center text-white shadow-xl group-hover:rotate-6 transition-all duration-300">
-                <Compass className="w-6 h-6 text-cyan-400 animate-spin-slow" />
-              </div>
+              <<div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-white shadow-xl border border-cyan-400/30">
+  <img
+    src="/logo/logo.png"
+    alt="Pasific Lombok Tour & Travel"
+    className="w-full h-full object-contain p-1 transition-transform duration-300 group-hover:scale-110"
+  />
+</div>
             </div>
             <div>
-              <span className="text-xl md:text-2xl font-black tracking-tight text-white block leading-tight font-serif italic">
-                Pacific <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent font-sans text-base not-italic uppercase tracking-wider font-extrabold">Lombok</span>
-              </span>
-              <span className="text-[10px] text-cyan-400/90 tracking-widest uppercase block font-sans font-bold flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                {t.brandTagline}
-              </span>
+              <div>
+  <h1 className="text-xl md:text-2xl font-extrabold text-white leading-tight">
+    Pasific Lombok
+  </h1>
+
+  <p className="text-[11px] uppercase tracking-[3px] text-cyan-400 font-semibold">
+    Tour & Travel
+  </p>
+</div>
             </div>
           </button>
 
