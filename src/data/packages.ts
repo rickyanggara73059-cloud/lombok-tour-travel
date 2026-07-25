@@ -14,7 +14,7 @@ export const tourPackages: TourPackage[] = [
     gallery: [
       '/packages/gili1.jpg',
       '/packages/gili2.jpg',
-      '/packages/gili3.jpg'
+      '/packages/gili3.jpg',
     ],
     title: {
       id: 'Paket Tour 3 Gili (Trawangan, Meno & Air)',
@@ -135,7 +135,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/gili2.jpg', // Snorkeling turtle
     gallery: [
       '/packages/gili3.jpg',
-      '/packages/snorkling.jpg'
+      '/packages/snorkling.jpg',
     ],
     title: {
       id: 'Paket Special Snorkeling Gili Trawangan & Turtle Point',
@@ -168,7 +168,7 @@ export const tourPackages: TourPackage[] = [
         'Rare Blue Coral & Fish Garden snorkeling stops',
         'Free high-res underwater GoPro photography & video',
         'Experienced personal snorkeling master guide',
-        'Beach relaxation & seafood dining time'
+        'Beach relaxation & seafood dining time',
       ],
       zh: [
         '核心打卡：特拉旺岸海龟点',
@@ -256,7 +256,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/giligede.jpg', // White sand secluded beach
     gallery: [
       '/packages/giligede1.jpg',
-      '/packages/gilikedis.jpg'
+      '/packages/gilikedis.jpg',
     ],
     title: {
       id: 'Paket Tour Secret Gilis (Gili Gede, Gili Layar & Gili Asahan Sekotong)',
@@ -377,7 +377,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/mtrinjani.jpg', // Volcano summit sunrise
     gallery: [
       '/packages/sunsetrinjani.jpg',
-      '/packages/plawangan.jpg'
+      '/packages/plawangan.jpg',
     ],
     title: {
       id: 'Paket Trekking Rinjani Summit 3.726m & Danau Segara Anak (3H2M Sembalun)',
@@ -575,7 +575,7 @@ export const tourPackages: TourPackage[] = [
     featured: false,
     image: '/packages/tracking.jpg', // Mountain savanna sunset
     gallery: [
-      '/packages/sembalun.jpg'
+      '/packages/sembalun.jpg',
     ],
     title: {
       id: 'Paket Trekking Rinjani Express Plawangan Sembalun (2H1M)',
@@ -709,13 +709,13 @@ export const tourPackages: TourPackage[] = [
       id: ['Tiket Taman Nasional Rinjani', 'Guide & Porter Tenda', 'Peralatan Camp (Tenda, Sleeping Bag, Matras)', 'Makan & Minum selama trek', 'Transportasi AC PP'],
       en: ['Rinjani National Park Fee', 'Mountain Guide & Porters', 'Camping Equipment (Tent, Sleeping Bag, Mat)', 'All meals & water during trek', 'AC Transport Roundtrip'],
       zh: ['国家公园门票', '导游与背夫', '全套露营装备', '徒步全程餐饮与水', '往返空调接送'],
-      ja: ['入山料', 'ガイド＆ポーター', 'キャンプ機材一式', '全食事・飲料水', '往復専用車']
+      ja: ['入山料', 'ガイド＆ポーター', 'キャンプ機材一式', '全食事・飲料水', '往復専用車'],
     },
     excluded: {
       id: ['Perlengkapan pribadi', 'Tip guide & porter'],
       en: ['Personal gear', 'Tips for guide & porter'],
       zh: ['个人物品', '导游背夫小费'],
-      ja: ['個人用品', 'チップ']
+      ja: ['個人用品', 'チップ'],
     }
   },
 
@@ -731,7 +731,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/sade1.jpg', // Traditional Sasak weaving / village
     gallery: [
       '/packages/sade2.jpg',
-      '/packages/sade3.jpg'
+      '/packages/sade3.jpg',
     ],
     title: {
       id: 'Paket Wisata Budaya Sasak Desa Sade & Desa Ende',
@@ -851,7 +851,7 @@ export const tourPackages: TourPackage[] = [
     featured: true,
     image: '/gakeri/merese.jpg', // Coastal hills ocean view
     gallery: [
-      '/gakeri/pantaikuta.jpg'
+      '/gakeri/pantaikuta.jpg',
     ],
     title: {
       id: 'Paket Tour Pantai Kuta Mandalika & Bukit Merese Sunset',
@@ -975,7 +975,7 @@ export const tourPackages: TourPackage[] = [
     featured: false,
     image: '/packages/benangkelambu.jpg', // Lush waterfall curtains
     gallery: [
-      '/packages/tiukelep1.jpg'
+      '/packages/tiukelep1.jpg',
     ],
     title: {
       id: 'Paket Wisata Air Terjun Benang Kelambu & Benang Stokel',
@@ -1095,7 +1095,7 @@ export const tourPackages: TourPackage[] = [
     featured: true,
     image: '/packages/tiukelep.jpg', // Huge jungle waterfall stream
     gallery: [
-      '/packages/tiu2.jpg'
+      '/packages/tiu2.jpg',
     ],
     title: {
       id: 'Paket Wisata Air Terjun Tiu Keleb & Sendang Gile Senaru',
@@ -1215,7 +1215,7 @@ export const tourPackages: TourPackage[] = [
     featured: false,
     image: '/packages/islamic.jpg', // Mataram Islamic Center / Souvenirs
     gallery: [
-      '/packages/Tembolak.jpg'
+      '/packages/Tembolak.jpg',
     ],
     title: {
       id: 'Paket Lombok City Tour & Belanja Mutiara Souvenir',
@@ -1339,7 +1339,7 @@ export const tourPackages: TourPackage[] = [
     featured: false,
     image: '/packages/mancing.jpg', // Deep sea boat fishing
     gallery: [
-      '/packages/mancing.jpg'
+      '/packages/mancing.jpg',
     ],
     title: {
       id: 'Paket Private Fishing Trip Lombok (Deep Sea & Coral Fishing)',
@@ -1460,7 +1460,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/surfing.jpg', // Wave surfing HD
     gallery: [
       '/packages/gerupuksurf.jpg',
-      '/packages/gerupuksurf.jpg'
+      '/packages/gerupuksurf.jpg',
     ],
     title: {
       id: 'Paket Kursus Surfing (Surf Lesson) Pemula & Intermediate di Lombok',

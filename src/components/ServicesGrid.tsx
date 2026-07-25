@@ -29,7 +29,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ currentLang }) => {
         zh: '吉利三岛跳岛游、包船玻璃底船、海龟浮潜与深海海钓。',
         ja: '3つのギリ島巡り、グラスボトムボート、ウミガメシュノーケル、本格フィッシング。'
       },
-      bgImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop'
+      bgImage: '/packages/karang.jpg'
     },
     {
       icon: <Compass className="w-7 h-7 text-white animate-spin-slow" />,
@@ -48,7 +48,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ currentLang }) => {
         zh: '仙本伦徒步2天1晚及3天2晚，包含国家公园持证导游、背夫团队与全套露营设备。',
         ja: 'センバルンルート2泊1日＆3泊2日。公認ガイド、ポーター、キャンプ用具一式付き。'
       },
-      bgImage: 'https://images.unsplash.com/photo-1589553460732-58ef7a71fbb5?q=80&w=600&auto=format&fit=crop'
+      bgImage: '/packages/plawangan.jpg'
     },
     {
       icon: <Users className="w-7 h-7 text-white" />,
@@ -67,7 +67,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ currentLang }) => {
         zh: '探访Sade与Ende萨萨克古村落、手织宋克特布与Peresean传统藤条比武。',
         ja: 'サデ村・エンデ村の伝統集落見学、手織り体験、伝統格闘演武ペレセアン観赏。'
       },
-      bgImage: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80&w=600&auto=format&fit=crop'
+      bgImage: '/packages/sade2.jpg'
     },
     {
       icon: <Car className="w-7 h-7 text-white" />,
@@ -105,7 +105,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ currentLang }) => {
         zh: 'Gerupuk/Selong Belanak初级冲浪课程、日租冲浪板与Desert Point追浪包车。',
         ja: '初心者サーフレッスン、日帰りボードレンタル、Desert Pointガイド付きトリップ。'
       },
-      bgImage: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=600&auto=format&fit=crop'
+      bgImage: '/packages/gerupuksurf.jpg'
     }
   ];
 
@@ -119,7 +119,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ currentLang }) => {
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest bg-cyan-500/20 text-cyan-300 px-4 py-1.5 rounded-full border border-cyan-400/30 shadow-md">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            Pacific Lombok - Laut, Surfing & Rinjani
+            Pacific Lombok - Laut, Surfing & Rinjani, air terjun
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-white font-serif italic">
             Layanan Tour Laut, Surfing & Rinjani Serba Ada
