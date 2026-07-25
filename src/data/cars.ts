@@ -70,15 +70,15 @@ export const carOptions: CarOption[] = [
     }
   },
   {
-    id: 'alphard',
-    name: 'Toyota Alphard ',
+    id: 'Zenix',
+    name: 'Toyota Zenix hybrid ',
     category: 'luxury',
     capacity: 6,
     luggage: 4,
     transmission: 'Automatic',
     price12HoursIdr: 2800000,
     priceFullDayIdr: 3200000,
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop',
+    image: '/cars/Zenix.jpg',
     included: {
       id: ['Captain Seat Ergonomis', 'Pelayanan VVIP Executive', 'Driver Berseragam Rapi', 'BBM & Tol/Parkir Included'],
       en: ['Ergonomic Leather Captain Seats', 'VVIP Executive Service Level', 'Uniformed Chauffeur Driver', 'Fuel & Parking Included'],
