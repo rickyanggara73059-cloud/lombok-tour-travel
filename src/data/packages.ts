@@ -1581,7 +1581,7 @@ export const tourPackages: TourPackage[] = [
     image: '/packages/sewasurfboard.jpg', // Surfboards lined up on beach
     gallery: [
       'https://images.unsplash.com/photo-1455729552865-3658a5d3e092?q=80&w=1000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop'
+      'https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop',
     ],
     title: {
       id: 'Layanan Penyewaan Surfboard Harian (Softboard, Longboard, Shortboard & Epoxy)',
