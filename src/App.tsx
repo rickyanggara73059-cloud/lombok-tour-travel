@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'motion/react';
 import { Language, TourPackage, PackageCategory, CarOption } from './types';
 import { tourPackages } from './data/packages';
@@ -87,9 +88,25 @@ export default function App() {
     { id: 'fishing', labelKey: 'catFishing' },
   ];
 
-  return (
+ return (
+  <>
+    <Helmet>
+      <title>Pacific Lombok | Lombok Tour Package & Travel Agency</title>
+
+      <meta
+        name="description"
+        content="Discover the best Lombok tour packages with Pacific Lombok. We offer airport transfers, Gili Islands tours, Rinjani trekking, private tours, car rental, and custom travel experiences."
+      />
+
+      <meta
+        name="keywords"
+        content="Paket Wisata Lombok, Lombok Tour Package, Lombok Travel, Airport Transfer Lombok, Gili Trawangan Tour, Rinjani Trekking"
+      />
+
+      <link rel="canonical" href="https://pasificlombok.erzadigital.online/" />
+    </Helmet>
+
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-cyan-500 selection:text-slate-950">
-      {/* Navigation */}
       <Navbar
         currentLang={currentLang}
         onLanguageChange={(lang) => setCurrentLang(lang)}
@@ -291,7 +308,8 @@ export default function App() {
         onClose={() => setBookingModalOpen(false)}
       />
 
-      <WhatsAppFloatingButton currentLang={currentLang} />
+            <WhatsAppFloatingButton currentLang={currentLang} />
     </div>
+  </>
   );
 }
