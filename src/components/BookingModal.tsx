@@ -96,7 +96,7 @@ Halo CS Pacific Lombok, mohon informasi ketersediaan jadwal dan prosedur konfirm
 
 const whatsappLink = `${whatsappUrl}?text=${encodedMsg}`;
 
-window.open(whatsappLink, '_blank');
+window.location.href = whatsappLink;
 onClose();
   };
 
