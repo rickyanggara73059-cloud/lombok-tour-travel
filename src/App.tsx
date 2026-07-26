@@ -121,7 +121,7 @@ export default function App() {
   />
   <meta
     property="og:image"
-    content="https://pasificlombok.erzadigital.online/og-image.jpg"
+    content="https://pasificlombok.erzadigital.online/og-image.jpeg"
   />
 
   {/* Twitter Card */}
@@ -136,7 +136,7 @@ export default function App() {
   />
   <meta
     name="twitter:image"
-    content="https://pasificlombok.erzadigital.online/og-image.jpg"
+    content="https://pasificlombok.erzadigital.online/og-image.jpeg"
   />
 </Helmet>
 
