@@ -90,21 +90,55 @@ export default function App() {
 
  return (
   <>
-    <Helmet>
-      <title>Pacific Lombok | Lombok Tour Package & Travel Agency</title>
+   <Helmet>
+  <title>Pacific Lombok | Lombok Tour Package & Travel Agency</title>
 
-      <meta
-        name="description"
-        content="Discover the best Lombok tour packages with Pacific Lombok. We offer airport transfers, Gili Islands tours, Rinjani trekking, private tours, car rental, and custom travel experiences."
-      />
+  <meta
+    name="description"
+    content="Discover the best Lombok tour packages with Pacific Lombok. We offer airport transfers, Gili Islands tours, Rinjani trekking, private tours, car rental, and custom travel experiences."
+  />
 
-      <meta
-        name="keywords"
-        content="Paket Wisata Lombok, Lombok Tour Package, Lombok Travel, Airport Transfer Lombok, Gili Trawangan Tour, Rinjani Trekking"
-      />
+  <meta
+    name="keywords"
+    content="Paket Wisata Lombok, Lombok Tour Package, Lombok Travel, Airport Transfer Lombok, Gili Trawangan Tour, Rinjani Trekking"
+  />
 
-      <link rel="canonical" href="https://pasificlombok.erzadigital.online/" />
-    </Helmet>
+  <link
+    rel="canonical"
+    href="https://pasificlombok.erzadigital.online/"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pasificlombok.erzadigital.online/" />
+  <meta
+    property="og:title"
+    content="Pacific Lombok | Lombok Tour Package & Travel Agency"
+  />
+  <meta
+    property="og:description"
+    content="Discover the best Lombok tour packages, airport transfers, Gili Islands tours, Rinjani trekking, and private travel experiences."
+  />
+  <meta
+    property="og:image"
+    content="https://pasificlombok.erzadigital.online/og-image.jpg"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Pacific Lombok | Lombok Tour Package & Travel Agency"
+  />
+  <meta
+    name="twitter:description"
+    content="Discover the best Lombok tour packages, airport transfers, Gili Islands tours, Rinjani trekking, and private travel experiences."
+  />
+  <meta
+    name="twitter:image"
+    content="https://pasificlombok.erzadigital.online/og-image.jpg"
+  />
+</Helmet>
 
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-cyan-500 selection:text-slate-950">
       <Navbar
