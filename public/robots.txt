@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://pasificlombok.erzadigital.online/sitemap.xml
