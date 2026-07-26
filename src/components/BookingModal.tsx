@@ -93,9 +93,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 Halo CS Pacific Lombok, mohon informasi ketersediaan jadwal dan prosedur konfirmasi pemesanan ini. Terima kasih!`;
 
     const encodedMsg = encodeURIComponent(messageText);
-  
-    window.open(whatsappUrl, '_blank');
-    onClose();
+
+const whatsappLink = `${whatsappUrl}?text=${encodedMsg}`;
+
+window.open(whatsappLink, '_blank');
+onClose();
   };
 
   return (
