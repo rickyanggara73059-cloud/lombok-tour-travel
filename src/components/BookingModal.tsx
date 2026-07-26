@@ -5,7 +5,7 @@ import { tourPackages } from '../data/packages';
 import { carOptions } from '../data/cars';
 import { translations } from '../data/translations';
 import { getLangText } from '../utils/lang';
-
+import { SITE } from "../config/site";
 interface BookingModalProps {
   isOpen: boolean;
   initialPackageId?: string;
@@ -93,8 +93,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 Halo CS Pacific Lombok, mohon informasi ketersediaan jadwal dan prosedur konfirmasi pemesanan ini. Terima kasih!`;
 
     const encodedMsg = encodeURIComponent(messageText);
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodedMsg}`;
-
+  
     window.open(whatsappUrl, '_blank');
     onClose();
   };

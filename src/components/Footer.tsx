@@ -2,6 +2,8 @@ import React from 'react';
 import { Compass, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, ShieldCheck } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { SITE } from "../config/site";
+import { SOCIAL } from "../config/social";
 
 interface FooterProps {
   currentLang: Language;
@@ -34,8 +36,6 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
           </div>
 
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Pacific%20Lombok,%20saya%20ingin%20konsultasi%20paket%20wisata."
-            target="_blank"
             rel="noreferrer"
             className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-black text-xs uppercase tracking-wider px-8 py-4 rounded-2xl shadow-lg transition-transform hover:scale-105 shrink-0"
           >
@@ -52,8 +52,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
                 <Compass className="w-6 h-6" />
               </div>
               <span className="text-xl font-black font-serif italic text-white">
-                Pacific <span className="text-amber-300 font-sans text-base uppercase tracking-wider font-extrabold">Lombok</span>
-              </span>
+  {SITE.name}
+</span>
             </div>
 
             <p className="text-xs leading-relaxed text-slate-300 font-normal">
@@ -61,15 +61,30 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
             </p>
 
             <div className="flex items-center gap-3 pt-2">
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors">
-                <Youtube className="w-4 h-4" />
-              </a>
+             <a
+  href={SOCIAL.instagram}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors"
+>
+  <Instagram className="w-4 h-4" />
+</a>
+              <a
+  href={SOCIAL.facebook}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors"
+>
+  <Facebook className="w-4 h-4" />
+</a>
+              <a
+  href={SOCIAL.youtube}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-colors"
+>
+  <Youtube className="w-4 h-4" />
+</a>
             </div>
           </div>
 
@@ -132,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>info@pacificlomboktour.com</span>
+                <span>{SITE.email}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -145,8 +160,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
-            © {new Date().getFullYear()} Pacific Lombok Travel Agency. {t.footerRights}
-          </div>
+  © {new Date().getFullYear()} {SITE.name}. {t.footerRights}
+</div>
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-amber-300" />
             <span>Terdaftar Resmi Dinas Pariwisata NTB</span>

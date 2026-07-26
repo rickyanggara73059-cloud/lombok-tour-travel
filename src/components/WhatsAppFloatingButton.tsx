@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
-
+import { SITE } from "../config/site";
 interface WhatsAppFloatingButtonProps {
   currentLang: Language;
 }
@@ -13,14 +13,18 @@ export const WhatsAppFloatingButton: React.FC<WhatsAppFloatingButtonProps> = ({ 
 
   const t = translations[currentLang];
 
-  const handleSend = (e: React.FormEvent) => {
-    e.preventDefault();
-    const finalMsg = userMsg || t.whatsappDefaultMsg;
-    const url = `https://wa.me/6281234567890?text=${encodeURIComponent(finalMsg)}`;
-    window.open(url, '_blank');
-    setUserMsg('');
-    setIsOpen(false);
-  };
+const handleSend = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const finalMsg = userMsg || t.whatsappDefaultMsg;
+
+  const url = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(finalMsg)}`;
+
+  window.open(url, "_blank");
+
+  setUserMsg("");
+  setIsOpen(false);
+};
 
   return (
     <div className="fixed bottom-6 right-6 z-40 font-sans">

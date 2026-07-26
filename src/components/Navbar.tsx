@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Globe, Menu, X, Compass, ChevronDown, Home, Compas
 import { motion, AnimatePresence } from 'motion/react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
-
+import { SITE } from "../config/site";
 interface NavbarProps {
   currentLang: Language;
   onLanguageChange: (lang: Language) => void;
@@ -110,15 +110,21 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onLanguageChange, o
               <span>RESPON WA &lt; 3 MENIT</span>
             </div>
 
-            <a href="tel:+6281234567890" className="flex items-center gap-1.5 text-slate-300 hover:text-cyan-300 transition-colors font-medium">
-              <Phone className="w-3.5 h-3.5 text-cyan-400" />
-              <span>+62 812-3456-7890</span>
-            </a>
+        <a
+  href={`tel:${SITE.whatsapp}`}
+  className="flex items-center gap-1.5 text-slate-300 hover:text-cyan-300 transition-colors font-medium"
+>
+  <Phone className="w-3.5 h-3.5 text-cyan-400" />
+  <span>{SITE.phone}</span>
+</a>
 
-            <a href="mailto:info@pacificlomboktour.com" className="hidden lg:flex items-center gap-1.5 text-slate-300 hover:text-cyan-300 transition-colors font-medium">
-              <Mail className="w-3.5 h-3.5 text-cyan-400" />
-              <span>info@pacificlomboktour.com</span>
-            </a>
+            <a
+  href={`mailto:${SITE.email}`}
+  className="hidden lg:flex items-center gap-1.5 text-slate-300 hover:text-cyan-300 transition-colors font-medium"
+>
+  <Mail className="w-3.5 h-3.5 text-cyan-400" />
+  <span>{SITE.email}</span>
+</a>
 
             <div className="hidden xl:flex items-center gap-1.5 text-amber-300 font-bold">
               <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
@@ -233,21 +239,21 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onLanguageChange, o
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500 group-hover:scale-110" />
               <div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-white shadow-xl border border-cyan-400/30">
   <img
-    src="/logo/logo.png"
-    alt="Pasific Lombok Tour & Travel"
-    className="w-full h-full object-contain p-1 transition-transform duration-300 group-hover:scale-110"
-  />
+  src={SITE.logo}
+  alt={SITE.name}
+  className="w-full h-full object-contain p-1 transition-transform duration-300 group-hover:scale-110"
+/>
 </div>
             </div>
             <div>
               <div>
-  <h1 className="text-xl md:text-2xl font-extrabold text-white leading-tight">
-    Pasific Lombok
-  </h1>
+ <h1 className="text-xl md:text-2xl font-extrabold text-white leading-tight">
+  {SITE.name}
+</h1>
 
-  <p className="text-[11px] uppercase tracking-[3px] text-cyan-400 font-semibold">
-    Tour & Travel
-  </p>
+ <p className="text-[11px] uppercase tracking-[3px] text-cyan-400 font-semibold">
+  {SITE.description}
+</p>
 </div>
             </div>
           </button>
